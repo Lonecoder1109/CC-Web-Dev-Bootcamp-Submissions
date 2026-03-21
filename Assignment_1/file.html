@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="about-container">
+    <h2>About Myself</h2>
+    <img src="imgg.jpg" alt="Avatar Image" height="100" width="100">
+    
+    <p>
+        Hey, This is Sahithi Kona, first year CSE student at RVCE. 
+        <br><br>
+        I'm curious by nature, constantly exploring - still figuring out my path across different areas of technology. I enjoy breaking things down to understand how they truly work.
+        <br><br>
+        Beyond tech, I’m deeply rooted in classical arts - a trained dancer and singer - blending creativity with logic in everything I do.
+        <br><br>
+        Always learning. Always evolving.
+    </p>
+</section>
+
+<header>
+        <h1>My To-Do List</h1>
+        <p>Stay organized and manage your daily tasks</p>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button onclick="addTask()">Add Task</button>
+        </section>
+
+        <section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Done</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="taskTableBody"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>“You can have it all. Just not all at once.” – Oprah Winfrey</p>
+    </footer>
+
+    <!-- Link JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
