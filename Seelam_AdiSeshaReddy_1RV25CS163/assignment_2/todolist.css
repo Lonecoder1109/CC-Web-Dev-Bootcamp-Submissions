@@ -1,0 +1,56 @@
+
+/* style.css */
+body {
+  font-family: Arial;
+  text-align: center;
+  background: linear-gradient(to right, rgb(242, 192, 255), rgb(48, 0, 48));
+}
+
+.card {
+  background: white;
+  width: 250px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.avatar {
+  font-size: 60px;
+}
+
+.task-box {
+  background: white;
+  width: 300px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  padding: 8px;
+  background: purple;
+  color: white;
+  border: none;
+}
+
+li {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.delete {
+  background: red;
+  color: white;
+}
