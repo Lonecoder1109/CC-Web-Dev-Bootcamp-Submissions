@@ -60,30 +60,23 @@
   <div class="container">
     <h1>My To-Do App</h1>
     <p>This app helps you track daily tasks efficiently.</p>
-
     <input type="text" id="taskInput" placeholder="Enter task">
     <button onclick="addTask()">Add</button>
-
     <ul id="taskList"></ul>
-
     <div class="profile">
       <img src="#" alt="avatar">
       <h3>Satyendra Nayak</h3>
       <p>Aspiring software engineer passionate about building projects.</p>
     </div>
   </div>
-
   <script>
     function addTask() {
       let input = document.getElementById("taskInput");
       let task = input.value.trim();
-
       if (task === "") return;
-
       let li = document.createElement("li");
       li.innerHTML = task + 
         ' <button class="delete" onclick="this.parentElement.remove()">X</button>';
-
       document.getElementById("taskList").appendChild(li);
       input.value = "";
     }
