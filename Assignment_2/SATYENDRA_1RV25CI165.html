@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+  <title>My To-Do App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: rgb(9, 5, 61);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: #2c2c3e;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input {
+      padding: 10px;
+      width: 70%;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px;
+      border: none;
+      background: #ff6b6b;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    li {
+      list-style: none;
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      background: #444;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .delete {
+      background: red;
+      border: none;
+      color: white;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .profile {
+      margin-top: 20px;
+    }
+    img {
+      width: 80px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My To-Do App</h1>
+    <p>This app helps you track daily tasks efficiently.</p>
+
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add</button>
+
+    <ul id="taskList"></ul>
+
+    <div class="profile">
+      <img src="#" alt="avatar">
+      <h3>Satyendra Nayak</h3>
+      <p>Aspiring software engineer passionate about building projects.</p>
+    </div>
+  </div>
+
+  <script>
+    function addTask() {
+      let input = document.getElementById("taskInput");
+      let task = input.value.trim();
+
+      if (task === "") return;
+
+      let li = document.createElement("li");
+      li.innerHTML = task + 
+        ' <button class="delete" onclick="this.parentElement.remove()">X</button>';
+
+      document.getElementById("taskList").appendChild(li);
+      input.value = "";
+    }
+  </script>
+</body>
+</html>
