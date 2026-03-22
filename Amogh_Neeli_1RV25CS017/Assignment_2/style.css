@@ -1,0 +1,89 @@
+/* Full page background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* Gradient background */
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main box */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+
+    /* shadow */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Profile */
+.profile img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Input section */
+.input-section {
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    width: 65%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #2575fc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1a5ed8;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each task */
+li {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Delete button */
+.deleteBtn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
