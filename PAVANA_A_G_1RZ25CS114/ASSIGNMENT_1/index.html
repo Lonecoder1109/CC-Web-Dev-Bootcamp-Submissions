@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My To-Do List </title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="notebook">
+
+    <div class="spiral" id="spiral"></div>
+
+    <div class="content">
+
+      <div class="profile">
+        <div class="avatar"></div>
+        <div class="profile-text">
+          <h1>Pavana A G's Task Pad</h1>
+          <p class="bio">I am a CS student and I love learning new technologies. </p>
+        </div>
+      </div>
+
+
+      <div class="tags">
+        <span class="tag tag-orange">To-Do App</span>
+        <span class="tag tag-green">Task Tracker</span>
+      </div>
+
+
+      <div class="section-label">Today's tasks <span></span></div>
+
+
+      <div class="input-row">
+        <input class="task-input" id="taskInput" type="text" placeholder="What do you need to do?" maxlength="120" />
+        <button class="add-btn" id="addBtn">+ Add</button>
+      </div>
+
+
+      <ul class="task-list" id="taskList">
+        <li class="empty-msg" id="emptyMsg">No tasks yet — add one above! </li>
+      </ul>
+
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
